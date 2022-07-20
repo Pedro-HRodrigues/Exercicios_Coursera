@@ -1,5 +1,6 @@
 #Reboot jogo do nim
 
+# Essa função pede e valida a jogada do usario 
 def usuario_escolhe_jogada(n,m):
     jogada = int(input("Quantas peças você vai tirar? "))
     while jogada > n or jogada > m or jogada <= 0:
@@ -7,6 +8,7 @@ def usuario_escolhe_jogada(n,m):
         jogada = int(input("Quantas peças você vai tirar? "))
     return jogada
 
+# Essa função define a jogada vencedora para o computador executar 
 def computador_escolhe_jogada (n,m): 
     retirada = n % (m + 1) 
     if n <= m: 
@@ -19,6 +21,7 @@ def computador_escolhe_jogada (n,m):
             retirada = m
             return retirada
 
+# essa funçao define os parametros da partida, define quem começa e o vencedor 
 def partida():
     n = int(input("Quantas peças ? "))
     m = int(input("Limite de peças por jogada ? "))
@@ -108,7 +111,7 @@ def partida():
     if joga == False:
         print("Fim do jogo! O computador ganhou!")
 
-
+# essa função inicia de fato o programa dando a opção de jogar uma ou tres partidas 
 def inicio():
     print ("Bem vindo ao jogo do NIM! Escolha:") 
     print ("1 - para jogar uma partida isolada") 

@@ -1,4 +1,4 @@
-
+#Algoritimo de busca sequencial 
 def busca_sequencial(lista, x):
     #(list, float) -> bool
     for i in range(len(lista)):
@@ -6,7 +6,7 @@ def busca_sequencial(lista, x):
             return True
     
     return False
-
+# algoritimo de busca binaria 
 def busca(lista, x):
     primeiro = 0
     ultimo = len(lista)-1
@@ -22,8 +22,7 @@ def busca(lista, x):
                 primeiro = meio + 1 
     return False
 
-lista = [1,2,9,4,6,5,3,8,7,10]
-
+# Algoritimo de busca bubble sort 
 def  bubble_sort(lista):
     fim = len(lista)
     for i in range (fim - 1, 0, -1):

@@ -1,3 +1,4 @@
+# essa função recebe uma lista de nomes e devolve o menor deles 
 def menor_nome(lista_nome):
     nomes = []
     for i in lista_nome:

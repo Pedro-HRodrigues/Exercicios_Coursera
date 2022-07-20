@@ -1,3 +1,4 @@
+# indentifica e devolve a posição do menor numero da lista 
 def acha_minimo(lista):
     minimo = True
     i = 0

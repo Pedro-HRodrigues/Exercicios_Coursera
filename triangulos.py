@@ -1,3 +1,4 @@
+# Esse e meu primeiro projeto de POO (programaçâo orientada a objetos)
 class Triangulo:
     def __init__(self, lado_a, lado_b, lado_c):
         self.a = lado_a

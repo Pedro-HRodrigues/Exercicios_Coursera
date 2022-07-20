@@ -1,4 +1,4 @@
-import time 
+# essa funçao diz se um numero n é primo ou não 
 def eprimo(n):
     x = 2
     y = 1
@@ -10,17 +10,11 @@ def eprimo(n):
     else:
         primo = False
     return primo
-
-inicio = time.time()
-limite = int(input("Digite o limite maximo : "))
-n = 2
-while n < limite:
-    if eprimo(n):
-        print(n, end = ", ")
-    n = n + 1
-print("Fim!")
-fim = time.time()
-tempo =  fim - inicio
-print ("demorou", tempo, "segundos")
-
-235 / 60 
+def imprime_primos():
+    limite = int(input("Digite o limite maximo : "))
+    n = 2
+    while n < limite:
+        if eprimo(n):
+            print(n, end = ", ")
+        n = n + 1
+    print("Fim!")
