@@ -10,6 +10,7 @@ def eprimo(n):
     else:
         primo = False
     return primo
+
 def imprime_primos():
     limite = int(input("Digite o limite maximo : "))
     n = 2

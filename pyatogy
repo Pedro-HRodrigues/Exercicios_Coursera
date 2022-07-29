@@ -1,0 +1,26 @@
+import pyautogui as pyauto
+from time import sleep
+
+pyauto.alert('Um bot tomou o controle da sua maquina por favor n mexa em nada ')
+#abrir o navegador edge
+pyauto.press('winleft')
+pyauto.write('edge')
+pyauto.press('enter')
+sleep(1)
+#abrir o canal de mensagem do discord 
+pyauto.write('https://discord.com/channels/@me/757368042668687401')
+#pyautogui.write('https://discord.com/channels/767449676206178347/812088815207579658')
+sleep(3)
+pyauto.press('enter')
+sleep(10)
+#escrever uma mensagem
+pyauto.write('bip, bop, inicializando')
+sleep(1)
+pyauto.press('enter')
+sleep(0.5)
+pyauto.write('Teste, teste')
+sleep(1)
+pyauto.press('enter')
+sleep(2)
+
+pyauto.alert('Os bots ja disponibilizaram sua maquina pode voltar a mexer ')
